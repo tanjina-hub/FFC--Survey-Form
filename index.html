@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="title">Integrity Fitness Center Survey Form</h1>
+        </header>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+        <form id="survey-form">
+
+            <div class="input-headings">
+
+                <label for="name" id="name-label">Name</label>
+                    <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-inputs"
+                    placeholder="Enter your Name"
+                    required>
+                    </input>
+
+                <br>
+
+                <label for="email" id="email-label">Email</label>
+                    <input
+                    type="email"
+                    id="email"     
+                    name="email"
+                    class="form-inputs"
+                    placeholder="Enter your Email"   
+                    required>
+                    </input>
+
+                <br>
+                
+                <label for="number" id="number-label">Age<span>(optional)</span></label>
+                    <input
+                    type="number"
+                    name="age"
+                    id="number"
+                    min="10"
+                    max="99"
+                    class="form-inputs"
+                    placeholder="Age">
+                    </input>
+
+                <br>
+
+                <label for="dropdown" id="profession" style="width: 90vw;">What is your occupation?</label>
+                    <select id="dropdown">
+                    <option disabled selected value>Select profession</option>
+                    <option value = "student"> Student</option>
+                    <option value = "player"> Player</option>
+                    <option value = "desk-job"> Desk Job</option>
+                    <option value = "others">Others</option>
+                    </select>
+
+                <br>
+
+                <p>Would you recommend Integrity Fitness Center to a friend?</p>
+
+                <label>
+                    <input
+                    name="user-recommend"
+                    value="definitely"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                    />Definitely</label
+                    >
+                <label>
+                    <input
+                    name="user-recommend"
+                    value="maybe"
+                    type="radio"
+                    class="input-radio"
+                    />Maybe</label
+                    >
+
+                <br>
+
+                <label>
+                    <input
+                    name="user-recommend"
+                    value="not-sure"
+                    type="radio"
+                    class="input-radio"
+                    />Not sure</label
+                    >
+
+                <p>What would you like to see improved?
+                <span class="clue">(Check all that apply)</span>
+                </p>
+                
+                <label>
+                    <input
+                    name="prefer"
+                    value="online-activity"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Online Activities</label
+                    >
+                <label>
+                    <input
+                    name="prefer"
+                    value="fitness-eqipment"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Fitness equipment</label
+                    >
+                <label>
+                    <input
+                    name="prefer"
+                    value="membership"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Membership</label
+                    >
+                <label>
+                    <input
+                    name="prefer"
+                    value="home-service"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Home Service</label
+                    >
+
+                <br>
+
+                <p>Any comments or suggestions?</p>
+
+                    <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Enter your comment here..."
+                    ></textarea>
+                <br>
+
+                <button type="submit" id="submit" class="submit-button">
+                Submit
+                </button>
+
+            </div>
+
+        </form>
+
+    </body>
+
+</html>
